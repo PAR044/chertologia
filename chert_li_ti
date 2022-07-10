@@ -1,0 +1,19 @@
+import random
+
+x = random.randint(0, 1)
+
+user_input = input("Угадай, чёрт ли ты (да\нет):")
+
+if user_input == "Да" and x == 1:
+    print("Ты чертовски прав!")
+
+elif user_input == "Да" and x == 0:
+    print("Сегодня ты не чёрт, попробуйте в следующий раз")
+
+elif user_input == "Нет" and x == 1:
+    print("Ан нет, от черта слышу!")
+
+elif user_input == "Нет" and x == 0:
+    print("Всё верно, приятель, ты не чёрт!")
+
+else: print("Перечитай условия, дурашка")
